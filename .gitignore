@@ -1,0 +1,9 @@
+cat .gitignore
+
+!uml-diagram.jpg
+!/src
+!/.gitignore
+!/README.md
+/bin
+.project
+.classpath
