@@ -7,7 +7,7 @@ public class AdventureTest {
 
 	public static void main(String[] args) {
 
-		System.out.println("Choose your race, sucker");
+		System.out.println("Choose your race: ");
 
 		Scanner scanner = new Scanner(System.in);
 		String race, name;

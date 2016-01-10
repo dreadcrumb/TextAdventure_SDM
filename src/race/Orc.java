@@ -25,7 +25,7 @@ public class Orc implements RaceState {
 	}
 	
 	@Override
-	public int[] getAffection() {
+	public int[] getAffectionArray() {
 		// TODO Auto-generated method stub
 		return affection;
 	}

@@ -24,7 +24,7 @@ int[] affection = {0,2,1,1};
 	}
 	
 	@Override
-	public int[] getAffection() {
+	public int[] getAffectionArray() {
 		// TODO Auto-generated method stub
 		return affection;
 	}

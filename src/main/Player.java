@@ -6,7 +6,7 @@ public class Player {
 
 	String name;
 	RaceState race;
-	
+	int fightingStrength = 1;
 	
 	public Player(RaceState _race, String _name) {
 		race = _race;
@@ -27,5 +27,13 @@ public class Player {
 	
 	public RaceState getRace() {
 		return race;
+	}
+	
+	public void setFightingStrength(int str) {
+		fightingStrength = str;
+	}
+	
+	public int getFightingStrength() {
+		return fightingStrength;
 	}
 }
