@@ -37,15 +37,14 @@ public class e2_friends extends standardEncounter {
 			encounterRace = "Troll";
 			break;
 		}
+		String n= "";
 		if (encounterPlace == 1 || encounterPlace == 2) {
-			System.out
-					.println("After leaving the dragon behind and travelling for some more hours, you find an "
-							+ encounterRace + "resting beside the path");
-		} else {
-			System.out
-					.println("After leaving the dragon behind and travelling for some more hours, you find a "
-							+ encounterRace + "resting beside the path");
+			n = "n ";
 		}
+		
+		System.out
+		.println("After leaving the dragon behind and travelling for some more hours, you find a " + n
+				+ encounterRace + "resting beside the path");
 
 	}
 
