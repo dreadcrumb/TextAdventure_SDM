@@ -36,32 +36,28 @@ public class e1_start extends standardEncounter {
 	}
 
 	@Override
-	public void printPossibilities(String a, String b, String c) {
-		super.printPossibilities(a, b, c);
-	}
-
-	@Override
 	@SuppressWarnings("resource")
 	public void result() {
-		Scanner scanner = new Scanner(System.in);
-		String answer = scanner.nextLine().toLowerCase();
-		if (checkInput(answer)) {
-			switch (answer) {
-			case "a":
-				System.out.println("You try to cut of the dragons head with a single blow but the dragon awakes and a furious combat starts. You barely make it out alive and can escape from the dragon.");
-				break;
-			case "b":
-				System.out.println("You get past the dragon but feel like a real coward. A real hero would've killed the dragon lad!");
-				break;
-			case "c":
-				System.out.println("The dragon awakes and refuses your offer to be tamed because he is a strong, independent dragon that needs no tamer. You are a little bit sad but wish the dragon a good day and walk past him.");
-				break;
-			}
+		String answer;
+		do {
+			Scanner scanner = new Scanner(System.in);
+			answer = scanner.nextLine().toLowerCase();
+		} while (!checkInput(answer));
+		switch (answer) {
+		case "a":
+			System.out
+					.println("You try to cut of the dragons head with a single blow but the dragon awakes and a furious combat starts. You barely make it out alive and can escape from the dragon.");
+			break;
+		case "b":
+			System.out
+					.println("You get past the dragon but feel like a real coward. A real hero would've killed the dragon lad!");
+			break;
+		case "c":
+			System.out
+					.println("The dragon awakes and refuses your offer to be tamed because he is a strong, independent dragon that needs no tamer. You are a little bit sad but wish the dragon a good day and walk past him.");
+			break;
 		}
-	}
 
-	public boolean checkInput(String answer) {
-		return super.checkInput(answer);
 	}
 
 }

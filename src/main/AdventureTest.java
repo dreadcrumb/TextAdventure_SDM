@@ -1,10 +1,12 @@
 package main;
 import java.util.Scanner;
-import race.*;
+
+import states.*;
 import encounters.*;
 
 public class AdventureTest {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
 		System.out.println("Choose your race: ");

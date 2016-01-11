@@ -1,5 +1,5 @@
 package main;
-import race.RaceState;
+import states.RaceState;
 
 
 public class Player {
@@ -7,6 +7,7 @@ public class Player {
 	String name;
 	RaceState race;
 	int fightingStrength = 1;
+	boolean specialWeapon = false;
 	
 	public Player(RaceState _race, String _name) {
 		race = _race;
@@ -35,5 +36,13 @@ public class Player {
 	
 	public int getFightingStrength() {
 		return fightingStrength;
+	}
+	
+	public void setSpecialWeapon(boolean w) {
+		specialWeapon = w;
+	}
+	
+	public boolean getSpecialWepon() {
+		return specialWeapon;
 	}
 }
