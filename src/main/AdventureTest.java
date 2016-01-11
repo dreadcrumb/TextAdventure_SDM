@@ -30,9 +30,13 @@ public class AdventureTest {
 			name = scanner.nextLine();
 		} while (name == null || name == "" );
 		
+	
+		if(name.equals("stacey")){
+			System.out.println("THAT'S NOT MY NAME....uhhh sorry nevermind.");
+		}
 		
-
 		Player player = new Player(name);
+		
 		switch (race) {
 		case "dwarf":
 			player.setRace(new Dwarf(player));
@@ -47,6 +51,8 @@ public class AdventureTest {
 			player.setRace(new Troll(player));
 			break;
 		}
+		
+		
 		
 		System.out.println("Welcome to the forest, " + player.getName() + " the " + player.getRace().toString());
 
