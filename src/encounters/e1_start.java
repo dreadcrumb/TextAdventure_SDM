@@ -6,8 +6,6 @@ import main.Player;
 
 public class e1_start extends standardEncounter {
 
-	Player player;
-
 	@Override
 	public int play(Player p, int counter) {
 		player = p;
@@ -43,6 +41,7 @@ public class e1_start extends standardEncounter {
 	}
 
 	@Override
+	@SuppressWarnings("resource")
 	public void result() {
 		Scanner scanner = new Scanner(System.in);
 		String answer = scanner.nextLine().toLowerCase();

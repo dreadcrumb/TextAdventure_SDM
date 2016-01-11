@@ -4,6 +4,11 @@ import main.Player;
 
 public abstract class standardEncounter {
 
+	protected String encounterRace;
+	protected int encounterPlace;
+	protected Player player;
+	protected int affection;
+	
 	public int play(Player p, int counter) {
 		start();
 		action();

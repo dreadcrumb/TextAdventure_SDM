@@ -6,10 +6,7 @@ import main.Player;
 
 public class e2_friends extends standardEncounter {
 
-	private String encounterRace;
-	private int encounterPlace;
-	private Player player;
-	private int affection;
+	
 
 	@Override
 	public int play(Player p, int counter) {
@@ -87,6 +84,7 @@ public class e2_friends extends standardEncounter {
 		super.printPossibilities(a, b, c);
 	}
 
+	@SuppressWarnings("resource")
 	@Override
 	public void result() {
 		Scanner scanner = new Scanner(System.in);
@@ -123,6 +121,8 @@ public class e2_friends extends standardEncounter {
 				}
 				break;
 			case 2:
+				System.out.println("You decide to make group up for a while and fight together. [Your fighting strength doubles]");
+				player.setFightingStrength(player.getFightingStrength()*2);
 				break;
 			}
 

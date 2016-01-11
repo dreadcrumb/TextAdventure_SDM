@@ -6,7 +6,9 @@ public class e3_assault extends standardEncounter{
 
 	@Override
 	public int play(Player p, int counter) {
+		player = p;
 		return super.play(p, counter);
+		
 		
 	}
 
