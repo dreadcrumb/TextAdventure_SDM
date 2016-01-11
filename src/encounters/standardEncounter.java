@@ -1,5 +1,7 @@
 package encounters;
 
+import java.util.Scanner;
+
 import main.Player;
 
 public abstract class standardEncounter {
@@ -8,7 +10,7 @@ public abstract class standardEncounter {
 	protected int encounterPlace;
 	protected Player player;
 	protected int affection;
-	
+
 	public int play(Player p, int counter) {
 		start();
 		action();
@@ -21,7 +23,7 @@ public abstract class standardEncounter {
 	public abstract void result();
 
 	public abstract void action();
-	
+
 	public void printPossibilities(String a, String b, String c) {
 		System.out.println("[Press A] " + a);
 		System.out.println("[Press B] " + b);
@@ -33,5 +35,16 @@ public abstract class standardEncounter {
 			return true;
 		}
 		return false;
+	}
+
+	@SuppressWarnings("resource")
+	public String getAnswer() {
+		String answer;
+		do {
+			System.out.println("Please enter a, b or c");
+			Scanner scanner = new Scanner(System.in);
+			answer = scanner.nextLine().toLowerCase();
+		} while (!checkInput(answer));
+		return answer;
 	}
 }

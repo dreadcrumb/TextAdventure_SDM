@@ -9,6 +9,13 @@ public class AdventureTest {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
+		System.out.println("Welcome to the Forest Version 1.0.");
+		System.out.println("Have fun and enjoy your adventure.");
+		System.out.println();
+		System.out.println();
+
+		
+		
 		System.out.println("Choose your race: ");
 
 		Scanner scanner = new Scanner(System.in);

@@ -1,6 +1,5 @@
 package encounters;
 
-import java.util.Scanner;
 
 import states.DeadState;
 import main.Player;
@@ -81,14 +80,10 @@ public class e2_friends extends standardEncounter {
 	}
 
 
-	@SuppressWarnings("resource")
 	@Override
 	public void result() {
-		String answer;
-		do {
-			Scanner scanner = new Scanner(System.in);
-			answer = scanner.nextLine().toLowerCase();
-		} while (!checkInput(answer));
+		String answer = getAnswer();
+		
 			switch (affection) {
 			case 0:
 				switch (answer) {

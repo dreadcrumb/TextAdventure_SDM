@@ -1,6 +1,6 @@
 package encounters;
 
-import java.util.Scanner;
+
 
 import main.Player;
 
@@ -36,13 +36,9 @@ public class e1_start extends standardEncounter {
 	}
 
 	@Override
-	@SuppressWarnings("resource")
 	public void result() {
-		String answer;
-		do {
-			Scanner scanner = new Scanner(System.in);
-			answer = scanner.nextLine().toLowerCase();
-		} while (!checkInput(answer));
+		String answer = getAnswer();
+		
 		switch (answer) {
 		case "a":
 			System.out

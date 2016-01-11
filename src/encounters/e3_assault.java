@@ -1,6 +1,5 @@
 package encounters;
 
-import java.util.Scanner;
 
 import states.DeadState;
 import main.Player;
@@ -35,14 +34,9 @@ public class e3_assault extends standardEncounter {
 		printPossibilities(a, b, c);
 	}
 
-	@SuppressWarnings("resource")
 	@Override
 	public void result() {
-		String answer;
-		do {
-			Scanner scanner = new Scanner(System.in);
-			answer = scanner.nextLine().toLowerCase();
-		} while (!checkInput(answer));
+		String answer = getAnswer();
 		DeadState deadState = new DeadState();
 			switch (answer) {
 			case "a":
