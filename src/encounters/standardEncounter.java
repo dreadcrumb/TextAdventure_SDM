@@ -24,13 +24,13 @@ public abstract class standardEncounter {
 
 	public abstract void action();
 
-	public void printPossibilities(String a, String b, String c) {
+	public static void printPossibilities(String a, String b, String c) {
 		System.out.println("[Press A] " + a);
 		System.out.println("[Press B] " + b);
 		System.out.println("[Press C] " + c);
 	}
 
-	public boolean checkInput(String answer) {
+	public static boolean checkInput(String answer) {
 		if (answer.equals("a") || answer.equals("b") || answer.equals("c")) {
 			return true;
 		}
@@ -38,7 +38,7 @@ public abstract class standardEncounter {
 	}
 
 	@SuppressWarnings("resource")
-	public String getAnswer() {
+	public static String getAnswer() {
 		String answer;
 		do {
 			System.out.println("Please enter a, b or c");
@@ -47,4 +47,23 @@ public abstract class standardEncounter {
 		} while (!checkInput(answer));
 		return answer;
 	}
+	public static boolean askYN(){
+		Scanner scan = new Scanner(System.in);
+		do{
+			System.out.println("Type in Y or N");
+			String answer = scan.nextLine();
+			if(answer.toLowerCase().equals("y")){
+				
+				return true;
+			}
+			else if(answer.toLowerCase().equals("n")){
+				
+				return false;
+			}
+			else{
+				System.out.println("Not a valid answer. Try again");
+			}
+		}while(true);
+	}
+	
 }

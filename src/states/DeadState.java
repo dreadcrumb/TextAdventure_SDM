@@ -14,6 +14,7 @@ public class DeadState {
 			Thread.sleep(1000);
 			System.out.println("1...");
 			Thread.sleep(1000);
+			
 			System.exit(0);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

@@ -4,21 +4,17 @@ import java.util.Scanner;
 import states.*;
 import encounters.*;
 
-public class AdventureTest {
+public class AdventureStart {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
-		System.out.println("Welcome to the Forest Version 1.0.");
-		System.out.println("Have fun and enjoy your adventure.");
-		System.out.println();
-		System.out.println();
-
-		
+	
 		
 		System.out.println("Choose your race: ");
 
 		Scanner scanner = new Scanner(System.in);
+		
 		String race, name;
 		
 		do {
@@ -31,7 +27,7 @@ public class AdventureTest {
 		} while (name == null || name == "" );
 		
 	
-		if(name.equals("stacey")){
+		if(name.toLowerCase().equals("stacey")){
 			System.out.println("THAT'S NOT MY NAME....uhhh sorry nevermind.");
 		}
 		
