@@ -2,7 +2,7 @@ package encounters;
 
 
 import java.util.Random;
-import java.util.Scanner;
+
 
 import states.DeadState;
 import main.Player;

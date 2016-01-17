@@ -2,7 +2,6 @@ package main;
 
 import gameStates.*;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
